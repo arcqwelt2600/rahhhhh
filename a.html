@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>these songs remind me of u</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      overflow-x: hidden;
+      font-family: 'Courier New', monospace;
+    }
+
+    /* VIDEO BG */
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    /* Title with outline */
+    h1 {
+      text-align: center;
+      font-size: 3em;
+      color: white;
+      margin-top: 60px;
+      text-shadow:
+        -2px -2px 0 #ff5e78,
+        2px -2px 0 #ff5e78,
+        -2px 2px 0 #ff5e78,
+        2px 2px 0 #ff5e78;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1100px;
+      margin: 60px auto;
+      z-index: 2;
+      position: relative;
+    }
+
+    .lyric-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .lyric-card:hover {
+      transform: scale(1.05);
+    }
+
+    .lyric-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- VIDEO -->
+  <video autoplay muted loop id="bg-video">
+    <source src="140669-775595968_small.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+    <audio id="tuChahiye" src="tuchahiyeatifaslambajrangibhaijaan-10965.mp3"></audio>
+    <audio id="pretty" src="JVKE - pretty (Lyrics).mp3"></audio>
+    <audio id="laDaDee" src="la_de_dee.mp3"></audio>
+    <audio id="paperrings" src="paper_rings.mp3"></audio>
+    <audio id="Dieforu" src="dieforu_the_weekend.mp3"></audio>
+    <audio id="made_for_loving_you" src="made_for_loving_you.mp3"></audio>
+    <audio id="what_makes_u_beautiful" src="what_makes_u_beautiful.mp3"></audio>
+    <audio id="Malboro" src="marlboro_nights.mp3"></audio>
+    <audio id="enna" src="enna-sona-tone-27388.mp3"></audio>
+    <audio id="my" src="my_kind_of_woman.mp3"></audio>
+    <audio id="arctic" src="i_wanna_be_yours.mp3"></audio>
+    <audio id="tareef" src="_Tarif_Karu_Kya_Uski_Sanam_Puri_Ringtone_(by Fringster.com).mp3"></audio>
+    <audio id="ek" src="_Ek_Ladki_Ko_Dekha_Toh_Aisa_Laga_Title_Song_Ringtone_(by Fringster.com).mp3"></audio>
+    <audio id="just" src="just_the_way_you_are.mp3"></audio>
+    <audio id="youn" src="Belong_Together-652647-mobiles24.mp3".mp3"></audio>
+
+  <h1>these songs remind me of u</h1>
+
+  <div class="grid-container">
+    <div class="lyric-card" onclick="playSong('tuChahiye')">
+        
+      <img src="Tu Chahiye.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('pretty')">
+        
+      <img src="Pretty.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('laDaDee')">
+        
+      <img src="La Da dee.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('made_for_loving_you')">
+        
+      <img src="I Was Made For Lovin' You (1).png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('Malboro')">
+        
+      <img src="Malboro Nights.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('paperrings')">
+        
+      <img src="Paper Rings.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('enna')">
+        
+      <img src="Enna Sonna.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('Dieforu')">
+        
+      <img src="Die For You.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('what_makes_u_beautiful')">
+   
+      <img src="What Makes You Beautiful.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('my')">
+   
+        <img src="My Kind Of Woman.png" alt="Tu Chahiye lyric">
+      </div>
+    <div class="lyric-card" onclick="playSong('arctic')">
+   
+        <img src="I Wanna Be Yours.png" alt="Tu Chahiye lyric">
+      </div>
+    <div class="lyric-card" onclick="playSong('tareef')">
+   
+        <img src="Tareef karu kya uski.png" alt="Tu Chahiye lyric">
+    </div>
+    <div class="lyric-card" onclick="playSong('youn')">
+   
+      <img src="You n Me Belong Together.png" alt="Tu Chahiye lyric">
+  </div>
+  <div class="lyric-card" onclick="playSong('ek')">
+   
+    <img src="Ek ladki do dheka toh aisalaga.png" alt="Tu Chahiye lyric">
+  </div>
+  <div class="lyric-card" onclick="playSong('just')">
+   
+    <img src="Just the way you are.png" alt="Tu Chahiye lyric">
+  </div>
+    
+  </div>
+  
+  <script>
+    let currentAudio = null;
+
+    function playSong(id) {
+      if (currentAudio && !currentAudio.paused) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+
+      currentAudio = document.getElementById(id);
+      currentAudio.play();
+    }
+    const heartsContainer = document.getElementById('hearts');
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = `${Math.random() * 100}%`;
+      heart.style.animationDuration = `${4 + Math.random() * 3}s`;
+      heart.style.opacity = Math.random();
+      heart.style.transform = `rotate(45deg) scale(${0.5 + Math.random()})`;
+      heartsContainer.appendChild(heart);
+
+      setTimeout(() => {
+        heart.remove();
+      }, 7000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
+
+
